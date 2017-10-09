@@ -8,6 +8,7 @@ RUN apt-get update && \
     ca-certificates \
     curl \
     git \
+    libgmp.so.10 \
     zlib1g-dev
 
 # Install stack 1.5.1
