@@ -19,5 +19,4 @@ RUN mv /tmp/stack-1.5.1-linux-x86_64/stack /usr/local/bin
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get install -y nodejs && apt-get clean
 
-RUN npm install -g yarn
-RUN npm install -g firebase-tools
+RUN npm install -g yarn && yarn global add firebase-tools
