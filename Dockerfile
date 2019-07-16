@@ -11,9 +11,8 @@ RUN apt-get update && \
     libgmp-dev \
     zlib1g-dev
 
-# Install stack 1.5.1
-RUN curl -L https://github.com/commercialhaskell/stack/releases/download/v1.5.1/stack-1.5.1-linux-x86_64.tar.gz | tar zx -C /tmp
-RUN mv /tmp/stack-1.5.1-linux-x86_64/stack /usr/local/bin
+# Install stack
+RUN curl -sSL https://get.haskellstack.org/ | sh
 
 # Install node 8.x
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
